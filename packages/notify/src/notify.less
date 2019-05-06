@@ -1,0 +1,55 @@
+  .fade-enter-active,
+  .fade-leave-active 
+     { transition: all 0.5s ease;}
+  .fade-enter{
+	  margin-top: -70px;
+  }
+  .fade-leave-to
+     {margin-top: -70px;}
+	 .fade{
+		 min-width: 380px;
+		 height: 64px;
+		 margin: 0 auto;
+		 margin-top:0px;
+	 }
+  .p-notify{
+    min-width: 380px;
+   height: 64px;
+   color: #fff;
+   position: absolute;
+   left: 50%;
+   top: 0;
+   transform: translateX(-50%);
+   text-align: center;
+   font-size: 16px;
+   display: inline-block;
+   white-space: nowrap;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 100;
+   padding: 0 40px;
+   background-color: aquamarine;
+   box-sizing: border-box;
+   box-shadow: 0 1px 4px rgba(0,0,0,0.16);
+   i{
+	display: inline-block;
+	font-style: normal;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 100%;
+    margin-right: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+   }
+	}
+	.success{
+		background-color: @color-success;
+		i{color: @color-success;}
+	}
+	.error{
+		background-color: @color-error;
+			i{color: @color-error;}
+	}

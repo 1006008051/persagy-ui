@@ -1,0 +1,128 @@
+.p-button{
+	font-size: 14px;
+	padding: 0 14px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2px;
+    box-sizing: border-box;
+	outline: none;
+}
+.p-button--blue{
+		background: #6c72a1;
+		color: #fff;
+		border: 1px solid #6c72a1;
+		height: 30px;
+		line-height: 30px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		 .path {
+		    stroke: #fff;
+		}
+		&:hover{
+			background-color: rgb(93,99,146)
+		}
+         &.is-plain{
+			 background: #fff;
+			 color: #6c72a1;
+			 border: 1px solid #cecece;
+			 	.path {
+			     stroke: #6c72a1;
+			 }
+		 }
+		 &.is-plain:hover{
+		 	background-color: rgb(248,248,248)
+		 }
+}
+.p-button--red{
+		    background: #f06f6f;
+			border: 1px solid #f06f6f;
+			color: #fff;
+		height: 30px;
+		line-height: 30px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		 .path {
+		    stroke: #fff;
+		}
+		&:hover{
+			background-color: rgb(255,96,96)
+		}
+		  &.is-plain{
+					 background: #fff;
+					 color: #f06f6f;
+					 border: 1px solid #cecece;
+					  .path {
+					     stroke: #f06f6f;
+					 }
+		}
+		&.is-plain:hover{
+			background-color: rgb(248,248,248)
+		}
+}
+
+//是否显示边框
+.is-border{
+	border: none !important; 
+}
+
+//是否禁用
+.is-disabled{
+	cursor: not-allowed;
+}
+
+//按钮形状
+.p-button--square{
+	width: 30px !important;
+	height: 30px !important;
+	padding: 0 !important;
+}
+.p-button--round{
+	width: 24px !important;
+	height: 24px !important;
+	line-height: 24PX !important;
+	padding: 0 !important;
+	border-radius: 100%;
+}
+
+//加载
+.per-bloading {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 100%;
+    margin-right: 8px;
+    background-size: cover;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+.per-loading-verysmall_svg {
+    width: 18px;
+    height: 18px;
+    animation: loading-rotate 2.1s linear infinite;
+	.path {
+    animation: loading-dash 1.8s ease-in-out infinite;
+    stroke-dasharray: 90,150;
+    stroke-dashoffset: 0;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+}
+@keyframes loading-rotate{
+	    transform: rotate(1turn);
+}
+@keyframes loading-dash{
+	0% {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+	}
+	50% {
+    stroke-dasharray: 90,150;
+    stroke-dashoffset: -40px;
+}
+100% {
+    stroke-dasharray: 90,150;
+    stroke-dashoffset: -135px;
+}
+}

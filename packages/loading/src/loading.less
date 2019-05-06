@@ -1,0 +1,62 @@
+.p-loading{
+		text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(255,255,255,0.8);
+	z-index: 99;
+		.loading-con {
+	    position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    transform: translate(-50%, -50%);
+	    min-width: 70px;
+	}
+.per-loading-overall_pic {
+		    width: 150px;
+		    height: 150px;
+		    background: url('./loading.gif') no-repeat;
+		    margin: 0 auto;
+		    background-size: 100% 100%;
+		}
+.per-loading-nomal_text {
+    color: #02a9d1;
+    margin-top: 15px;
+}
+		.per-loading-nomal_svg {
+	    width: 48px;
+	    height: 48px;
+	    animation: loading-rotate 2.1s linear infinite;
+	}
+		.path {
+	    animation: loading-dash 1.8s ease-in-out infinite;
+	    stroke-dasharray: 90,150;
+	    stroke-dashoffset: 0;
+	    stroke-width: 2;
+	    stroke: #05aad2;
+	    stroke-linecap: round;
+	}
+}
+
+@keyframes loading-rotate{
+	100% {
+    transform: rotate(1turn);
+}
+}
+
+@keyframes loading-dash{
+	0% {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+	}
+	50% {
+    stroke-dasharray: 90,150;
+    stroke-dashoffset: -40px;
+}
+100% {
+    stroke-dasharray: 90,150;
+    stroke-dashoffset: -135px;
+}
+}
